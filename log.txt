@@ -1,0 +1,78 @@
+Gavins-MBP:burger Test123$ node server.js
+this is loaded
+App now listening at localhost:3000
+connected as id: 3650242
+
+^Z
+[1]+  Stopped                 node server.js
+
+
+
+Gavins-MBP:burger Test123$ heroku --version
+heroku/7.33.3 darwin-x64 node-v11.14.0
+
+
+
+Gavins-MBP:burger Test123$ heroku login
+heroku: Press any key to open up the browser to login or q to exit: 
+Opening browser to https://cli-auth.heroku.com/auth/browser/3b95f1ef-a8b3-4efc-a687-00c2c6c5e0d4
+Logging in... done
+Logged in as gavin.martin@koalescere.com
+
+
+
+Gavins-MBP:burger Test123$ heroku local web
+
+"../assets/img/Screen_Shot_local_5000.png"
+
+
+[OKAY] Loaded ENV .env File as KEY=VALUE Format
+[WARN] ENOENT: no such file or directory, open 'Procfile'
+[OKAY] package.json file found - trying 'npm start'
+4:48:29 PM web.1 |  > burger@1.0.0 start /Users/Test123/development/14_HW/burger
+4:48:29 PM web.1 |  > node server.js
+4:48:29 PM web.1 |  this is loaded
+4:48:29 PM web.1 |  App now listening at localhost:5000
+4:48:29 PM web.1 |  connected as id: 3650261
+4:49:18 PM web.1 |  burgers function(res){
+4:49:18 PM web.1 |          cb(res);
+4:49:18 PM web.1 |        }
+4:49:18 PM web.1 |  /Users/Test123/development/14_HW/burger/node_modules/mysql/lib/protocol/Parser.js:437
+4:49:18 PM web.1 |        throw err; // Rethrow non-MySQL errors
+4:49:18 PM web.1 |        ^
+4:49:18 PM web.1 |  Error: ER_NO_SUCH_TABLE: Table 'w9d2wftkybxrqlvo.burgers' doesn't exist
+4:49:18 PM web.1 |      at Query.Sequence._packetToError (/Users/Test123/development/14_HW/burger/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+4:49:18 PM web.1 |      at Query.ErrorPacket (/Users/Test123/development/14_HW/burger/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+4:49:18 PM web.1 |      at Protocol._parsePacket (/Users/Test123/development/14_HW/burger/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+4:49:18 PM web.1 |      at Parser._parsePacket (/Users/Test123/development/14_HW/burger/node_modules/mysql/lib/protocol/Parser.js:433:10)
+4:49:18 PM web.1 |      at Parser.write (/Users/Test123/development/14_HW/burger/node_modules/mysql/lib/protocol/Parser.js:43:10)
+4:49:18 PM web.1 |      at Protocol.write (/Users/Test123/development/14_HW/burger/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+4:49:18 PM web.1 |      at Socket.<anonymous> (/Users/Test123/development/14_HW/burger/node_modules/mysql/lib/Connection.js:91:28)
+4:49:18 PM web.1 |      at Socket.<anonymous> (/Users/Test123/development/14_HW/burger/node_modules/mysql/lib/Connection.js:525:10)
+4:49:18 PM web.1 |      at Socket.emit (events.js:198:13)
+4:49:18 PM web.1 |      at Socket.EventEmitter.emit (domain.js:448:20)
+4:49:18 PM web.1 |      --------------------
+4:49:18 PM web.1 |      at Protocol._enqueue (/Users/Test123/development/14_HW/burger/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+4:49:18 PM web.1 |      at Connection.query (/Users/Test123/development/14_HW/burger/node_modules/mysql/lib/Connection.js:201:25)
+4:49:18 PM web.1 |      at Object.selectAll (/Users/Test123/development/14_HW/burger/config/orm.js:13:18)
+4:49:18 PM web.1 |      at Object.selectAll (/Users/Test123/development/14_HW/burger/models/burger.js:6:13)
+4:49:18 PM web.1 |      at /Users/Test123/development/14_HW/burger/controllers/burgers_controller.js:7:12
+4:49:18 PM web.1 |      at Layer.handle [as handle_request] (/Users/Test123/development/14_HW/burger/node_modules/express/lib/router/layer.js:95:5)
+4:49:18 PM web.1 |      at next (/Users/Test123/development/14_HW/burger/node_modules/express/lib/router/route.js:137:13)
+4:49:18 PM web.1 |      at Route.dispatch (/Users/Test123/development/14_HW/burger/node_modules/express/lib/router/route.js:112:3)
+4:49:18 PM web.1 |      at Layer.handle [as handle_request] (/Users/Test123/development/14_HW/burger/node_modules/express/lib/router/layer.js:95:5)
+4:49:18 PM web.1 |      at /Users/Test123/development/14_HW/burger/node_modules/express/lib/router/index.js:281:22
+4:49:18 PM web.1 |  npm ERR! code ELIFECYCLE
+4:49:18 PM web.1 |  npm 
+4:49:18 PM web.1 |  ERR! errno 1
+4:49:18 PM web.1 |  npm ERR! burger@1.0.0 start: `node server.js`
+4:49:18 PM web.1 |  npm ERR! Exit status 1
+4:49:18 PM web.1 |  npm ERR! 
+4:49:18 PM web.1 |  npm ERR! Failed at the burger@1.0.0 start script.
+4:49:18 PM web.1 |  npm ERR!
+4:49:18 PM web.1 |   This is probably not a problem with npm. There is likely additional logging output above.
+4:49:18 PM web.1 |  npm ERR! A complete log of this run can be found in:
+4:49:18 PM web.1 |  npm ERR!     /Users/Test123/.npm/_logs/2019-10-29T20_49_18_918Z-debug.log
+[DONE] Killing all processes with signal  SIGINT
+4:49:18 PM web.1 Exited with exit code null
+Gavins-MBP:burger Test123$ heroku local web
