@@ -19,17 +19,15 @@ CREATE TABLE burgers (
   PRIMARY KEY (id)
 );
 
--- Creates new rows containing data in all named columns --
-INSERT INTO burger (name, has_pet, pet_name, pet_age)
-VALUES ("Ahmed", true, "Rockington", 100);
+-- -- Creates new rows containing data in all named columns --
 
-INSERT INTO burgers (burger_named, devoured) VALUES ("backyarder", FALSE);
-INSERT INTO burgers (burger_named, devoured) VALUES ("widowmaker", FALSE);
-INSERT INTO burgers (burger_named, devoured) VALUES ("bo_burger", FALSE);
-INSERT INTO burgers (burger_named, devoured) VALUES ("california_burger", FALSE);
-INSERT INTO burgers (burger_named, devoured) VALUES ("dirty_hipster", FALSE);
-INSERT INTO burgers (burger_named, devoured) VALUES ("nobodys_burger", FALSE);
-INSERT INTO burgers (burger_named, devoured) VALUES ("koko_chicken_burger", FALSE);
-INSERT INTO burgers (burger_named, devoured) VALUES ("royal_with_cheese", FALSE);
+-- INSERT INTO burgers (burger_name, devoured) VALUES ("backyarder", FALSE);
+-- INSERT INTO burgers (burger_name, devoured) VALUES ("widowmaker", FALSE);
+-- INSERT INTO burgers (burger_name, devoured) VALUES ("bo_burger", FALSE);
+-- INSERT INTO burgers (burger_name, devoured) VALUES ("california_burger", FALSE);
+-- INSERT INTO burgers (burger_name, devoured) VALUES ("dirty_hipster", FALSE);
+-- INSERT INTO burgers (burger_name, devoured) VALUES ("nobodys_burger", FALSE);
+-- INSERT INTO burgers (burger_name, devoured) VALUES ("koko_chicken_burger", FALSE);
+-- INSERT INTO burgers (burger_name, devoured) VALUES ("royal_with_cheese", FALSE);
 
-
+-- SELECT * FROM burgers;

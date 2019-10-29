@@ -1,11 +1,23 @@
-var orm = request("../config/org.js");
+var orm = require("../config/orm.js");
 
-// Object for all our SQL statement functions.
+// Object for all of the SQL statement functions.
 var burger = {
-    all: function(cb) {
-        orm.all("burgers", function(res){
+    selectAll: function(cb) {
+        orm.selectAll("burgers", function(res){
         cb(res);
       });
     },
-}  
-module.exports = burger
+    updateOne: function(id,cb){
+      orm.updateOne("burgers",id,cb, function(res){
+        cb(res);
+      });
+    },  
+
+    insertOne: function(name,cb,){
+      orm.insertOne("burgers",name,cb, function(res){
+        cb(res);
+      }); 
+    }
+  };    
+
+module.exports = burger;
