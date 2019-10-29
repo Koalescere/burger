@@ -1,7 +1,5 @@
 require("dotenv").config();
 
-var keys = require("../keys.js");
-// var jawsdb = new jawsdb(keys.spotify);
 
 
 var mysql = require("mysql");
